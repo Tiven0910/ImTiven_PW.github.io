@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/RGBELoader.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.min.js"></script>
+    <script defer src="main.js"></script>
+    <style>
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to right, #fbfaff 0%, #ecf0fb 100%);
+            color: var(--black-color);
+            font-size: 16px;
+        }
+
+        .hero-info p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mouse-effect">
+        <div class="circle"></div>
+        <div class="circle-follow"></div>
+    </div>
+
+    <div  class="hide-text">
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <span></span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <h1 class="main-txt">My Personal Website</h1>
+    <section id="home" class="hide-text">
+        <div class="hero-info">
+            <h3>Welcome To my World</h3>
+            <h1>Hi I'm Tiventhan</h1>
+
+            <div class="text-animate">
+                <h2>Learn. Build. Grow.</h2>
+            </div>
+
+            <p>Welcome to my digital space! I’m Tiventhan, a Computer Science student passionate about innovation, <br>
+            creativity, and consistency. Here, you’ll find insights into my journey, education, and interests.</p>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img src="images/home.png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>Learn. Build. Grow.</p>
+                </div>
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="hide-text">
+        <div class="about-img">
+            <img src="/images/about.png" alt="" class="aboutHero">
+            <div class="showcase-ring">
+                <img src="shapes/ring.png" class="ring">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>A glimpse into my journey, passions, and what drives me forward</h3>
+            <br>
+            <p>My name is Tiventhan, and I’m a university student pursuing a Bachelor of Computer Science (HONS) at University Selangor (UNISEL). As the second and last child in my family, I’ve always embraced both the wisdom and the fun of sibling life.</p>
+            <br>
+            <p>When I’m not studying or working on my latest project, you’ll find me enjoying my hobbies: playing football or futsal, challenging my mind with chess, sketching creative designs, or exploring the world of coding. I’m driven by consistency—it’s what keeps me focused on my goals and passions.</p>
+            <br>
+            <p>Fun fact: I once played 10 chess games simultaneously and won 7 of them!</p>
+        </div>
+        <div class="about-content2">
+            <div class="about-btn">
+                <button class="active">Interest</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                        <ul class="styled-list">
+                            <br>
+                            <li><p>Web Development: Passionate about creating visually appealing and user-friendly websites.</p></li>
+                            <br>
+                            <li><p>Chess: Enjoy solving puzzles and improving strategic thinking through chess.</p></li>
+                            <br>
+                            <li><p>Football & Futsal: Love playing team sports to stay active and foster teamwork.</p></li>
+                            <br>
+                            <li><p>Learning New Skills: Always eager to explore new technologies, tools, and hobbies.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <ul class="styled-list">
+                            <br>
+                            <li><p>University Selangor (UNISEL) : </p>
+                                <span>Bachelor of Computer Science (HONS)</span>
+                                    <ul class="styled-list">
+                                        <li><p>Current Student (Expected Graduation: 2026)</p></li>
+                                        <li><p>Areas of Focus: Software Development, Artificial Intelligence, and Web Technologies.</p></li>
+                                    </ul>
+                            </li>
+                            <br>
+                            <li><p>High School : </p>
+                                <span>Sekolah Menengah Kebangsaan ST.PAUL (SMK ST.PAUL), Seremban, Negeri Sembilan</span>
+                                    <ul class="styled-list">
+                                        <li><p>Arts Stream Graduate</p></li>
+                                        <li><p>Active in Chess Club and Football Team.</p></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="hide-text">
+        <div class="blog-content">
+            <div class="blog1" id="style">
+                <h3> How I Started Coding: A Beginner’s Journey</h3>
+                <p>"It all started when I came across a simple HTML tutorial during high school. I was amazed at how a few lines of code could create something visible on a browser. My first project was a basic webpage with my name and a colorful background—it looked terrible, but I was proud of it! Since then, I’ve explored Python, JavaScript, and even dabbled in AI technologies. Coding taught me patience, creativity, and the thrill of solving problems."</p>
+            </div>
+            <div class="blog2" id="style">
+                <h3>What Football Taught Me About Teamwork</h3>
+                <p>"Playing football has been more than just a game for me—it’s been a life lesson in disguise. As a midfielder, I’ve learned how to strategize, communicate, and trust my teammates. One memorable match was when our team was losing 2-0 at halftime, but by working together and supporting each other, we turned the game around to win 3-2. That experience taught me the importance of collaboration, resilience, and celebrating even the small wins."</p>
+            </div>
+            <div class="blog3" id="style">
+                <h3>A Day in the Life of a Computer Science Student</h3>
+                <p>"My day as a Computer Science student at UNISEL starts with a dose of coffee and a quick review of my to-do list. Mornings are usually packed with lectures—algorithms, AI, and software development classes. After lunch, I head to the library to work on my Final Year Project, brainstorming ideas for my AI-powered career recommendation system. Evenings are for unwinding: a game of futsal with friends or a round of chess online. Balancing academics and hobbies isn’t always easy, but consistency keeps me on track."</p>
+            </div>
+            <div class="blog4" id="style">
+                <h3>The Power of Consistency: My Motivation Journey</h3>
+                <p>"Consistency has been my secret weapon in everything I do. Whether it’s coding every day, improving my chess skills, or staying active with football, small, consistent efforts have always led to big results. One example is my coding journey: starting with 30 minutes a day, I built the foundation for more advanced projects over time. Consistency isn’t just about discipline—it’s about believing in the process and trusting that progress will follow."</p>
+            </div>
+            <div class="blog5" id="style">
+                <h3>Why I Love Drawing: A Creative Escape from the Digital World</h3>
+                <p>"Amidst all the screens and code, drawing offers me a refreshing escape into the analog world. Whether it’s sketching a football scene or experimenting with abstract designs, drawing allows me to express ideas that words or code can’t. One of my favorite projects was sketching a futuristic city—it started as a random doodle during a lecture but turned into a full-blown artwork that now hangs on my wall."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="hide-text">
+        <div class="phos-content">
+            <div class="img1" id="phos">
+                <img src="images/img1.png" alt="Image" >
+                <p>My first day at UNISEL</p>
+            </div>
+            <div class="img2" id="phos">
+                <img src="images/img2.png" alt="Image" >
+                <p>Hiking at Gunung Datuk</p>
+            </div>
+            <div class="img3" id="phos">
+                <img src="images/img3.png" alt="Image" >
+                <p>Hiking at Broga, Semenyih</p>
+            </div>
+            <div class="img4" id="phos">
+                <img src="images/img4.png" alt="Image" >
+                <p>Hiking at Batu Putih, PD</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="hide-text">
+        <div class="contact-info">
+            <div class="main-text">
+                <h2>Contact Me</h2>
+                <span>get in touch with me</span>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="#" id="" cols="30" rows="10">
+                </textarea>
+                <div class="formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <canvas class="webgl" id="webgl"></canvas>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
